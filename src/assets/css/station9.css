@@ -1,0 +1,54 @@
+body {
+  background-color: #c4c4c4;
+}
+
+header,
+footer {
+  background-color: #ffffff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 5px;
+  background-color: #fff;
+  color: #282828;
+  margin: 40px;
+}
+
+.card img {
+  width: 288px;
+  height: 182px;
+  margin-bottom: 10px;
+}
+
+.card .card__title {
+  font-size: 14px;
+}
+
+.card .card__description {
+  color: #282828;
+}
+
+@media screen and (max-width: 768px) {
+  .card .card__description {
+    font-size: 8px;
+  }
+  .card .card__title {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card .card__description {
+    display: none;
+  }
+  .card .card__title {
+    font-size: 12px;
+  }
+}
